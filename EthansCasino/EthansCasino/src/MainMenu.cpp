@@ -6,6 +6,7 @@
 //
 
 #include "MainMenu.h"
+#include "Player.h"
 #include <iostream>
 
 void MainMenu::displayMenu() {
@@ -14,6 +15,13 @@ void MainMenu::displayMenu() {
     std::cout << " Welcome To Ethan's Casino " << '\n';
     std::cout << "===========================" << '\n';
     std::cout << std::endl;
+
+    std::cout << "Please Enter Your Name: " << '\n';
+    std::getline(std::cin, playerName);
+
+    Player player(playerName);
+    std::cout << "Welcome, " << playerName << "!" << '\n';
+
     std::cout << " What Game Would You Like To Play? " << '\n';
     std::cout << "1. BlackJack " << '\n';
     std::cout << "2. Baccarat " << '\n';

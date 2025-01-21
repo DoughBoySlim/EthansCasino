@@ -10,7 +10,6 @@ struct Card {
     std::string rank;
     int value;
 
-    std::vector<Card> createDeck();
 };
 
 #endif CARD_H

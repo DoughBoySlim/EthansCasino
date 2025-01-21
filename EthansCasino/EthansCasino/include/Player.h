@@ -14,6 +14,7 @@ class Player {
 private:
     std::string name;
     double money;
+    double betAmount;
 public:
     
     Player(std::string pName);
@@ -22,6 +23,7 @@ public:
     
     double definePlayerMoney();
     void printPlayerInformation();
+    double updatePlayerMoney(bool result);
     
 };
 

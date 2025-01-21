@@ -29,3 +29,13 @@ void Player::printPlayerInformation() {
     std::cout << "Name: " << name << '\n';
     std::cout << "Total Money Available: " << money << '\n';
 }
+
+double Player::updatePlayerMoney(bool result) {
+
+    if(result) {
+        return money += betAmount;
+    } else {
+        return money -= betAmount;
+    }
+
+}
