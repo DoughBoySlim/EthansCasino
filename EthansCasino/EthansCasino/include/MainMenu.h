@@ -19,6 +19,7 @@ public:
     
     void displayMenu();
     int gameChoice();
+    int getGameChoice() const { return choice; }
     
 private:
     int choice;
