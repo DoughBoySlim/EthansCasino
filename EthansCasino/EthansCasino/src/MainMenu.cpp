@@ -33,11 +33,10 @@ void MainMenu::displayMenu() {
 
 int MainMenu::gameChoice() {
     
-    int choice = 0;
     std::cin >> choice;
     while (std::cin.fail() || choice < 1 || choice > 4) {
-        std::cin.clear();  // Clears the error flag
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // Discards the invalid input
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  
         std::cout << "Please enter a valid number (1-4): " << '\n';
         std::cout << "Here are Your Choices Again: " << '\n';
         std::cout << "1. BlackJack " << '\n';

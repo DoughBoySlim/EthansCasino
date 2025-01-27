@@ -21,6 +21,7 @@ public:
     int gameChoice();
     
 private:
+    int choice;
     std::string playerName;
 };
 
