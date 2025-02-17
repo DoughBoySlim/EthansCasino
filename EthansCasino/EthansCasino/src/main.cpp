@@ -6,9 +6,16 @@
 //
 
 #include <iostream>
+#include "../include/MainMenu.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    
+    MainMenu menu;
+
+    menu.displayMenu();
+    menu.gameChoice();
+    menu.getGameChoice();
+
+    
     return 0;
 }

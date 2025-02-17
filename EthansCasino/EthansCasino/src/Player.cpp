@@ -5,7 +5,7 @@
 //  Created by Ethan Gibeau on 1/18/25.
 //
 
-#include "Player.h"
+#include "../include/Player.h"
 #include <iostream>
 #include <random>
 
@@ -13,6 +13,8 @@ Player::Player(std::string pName) {
     name = pName;
     money = definePlayerMoney();
 }
+
+Player::~Player() {}
 
 double Player::definePlayerMoney() {
     

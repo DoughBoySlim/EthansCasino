@@ -5,9 +5,19 @@
 //  Created by Ethan Gibeau on 1/18/25.
 //
 
-#include "MainMenu.h"
-#include "Player.h"
+#include "../include/MainMenu.h"
+#include "../include/Player.h"
 #include <iostream>
+#include <limits>
+
+// Constructor
+MainMenu::MainMenu() {
+    choice = 0;
+    playerName = "";
+}
+
+//Destructor
+MainMenu::~MainMenu() {}
 
 void MainMenu::displayMenu() {
     
